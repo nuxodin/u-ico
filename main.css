@@ -1,0 +1,41 @@
+/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v77/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'LigatureSymbols';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://rawcdn.githack.com/kudakurage/LigatureSymbols/d54f43cd72d190b7a3c0b2ee1644fac770b4a146/LigatureSymbols-2.11.woff') format('woff');
+}
+
+
+.u-ico, u-ico::before {
+  font-family: 'Material Icons','LigatureSymbols';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+.u-ico::before {
+  content:attr(title);
+  xmargin-right:0.3em;
+  xfont-size:130%;
+}
