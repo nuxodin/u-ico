@@ -13,7 +13,7 @@
 }
 
 
-.u-ico, u-ico::before {
+u-ico {
   font-family: 'Material Icons','LigatureSymbols';
   font-weight: normal;
   font-style: normal;
@@ -33,9 +33,4 @@
   -moz-osx-font-smoothing: grayscale;
   /* Support for IE. */
   font-feature-settings: 'liga';
-}
-.u-ico::before {
-  content:attr(title);
-  xmargin-right:0.3em;
-  xfont-size:130%;
 }
