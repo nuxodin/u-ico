@@ -10,6 +10,10 @@ Universal Icon using different icon fonts
 <u-ico style="--u-ico-font:'RemixOutlined'">twitter</u-ico>
 
 ```
+## theming / custom css properties
+`--u-ico-font:'LigatureSymbols'` Defines the font used for the icons  
+`--u-ico-color:red` The default is currentColor  
+`--u-ico-size:1.5rem` the font-size of the icon  
 
 ## font sets
 fonts.css has the following predefined font-families.
