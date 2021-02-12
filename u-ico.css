@@ -1,0 +1,38 @@
+html {
+  --u-ico-font:"Material Icons";
+  --u-ico-size:1.5rem;
+  --u-ico-color:currentColor;
+}
+u-ico {
+  font-family: var(--u-ico-font);
+  font-size: var(--u-ico-size);
+  xfont-size: 24px;  /* Preferred icon size, material-icons */
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased; /* Support for all WebKit browsers. */
+  text-rendering: optimizeLegibility; /* Support for Safari and Chrome. */
+  -moz-osx-font-smoothing: grayscale; /* Support for Firefox. */
+  font-feature-settings: 'liga'; /* Support for IE. */
+}
+u-ico {
+  width: var(--u-ico-size);
+  height: var(--u-ico-size);
+  color: var(--u-ico-color);
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  overflow: hidden;
+}
+/* je */
+u-ico[failed] {
+  overflow:visible;
+  width:auto;
+  font-family:inherit;
+}

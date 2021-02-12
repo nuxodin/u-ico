@@ -1,0 +1,51 @@
+/* https://material.io/resources/icons/ */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v77/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Material Icons Outlined';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialiconsoutlined/v45/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUce.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Material Icons Round';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialiconsround/v44/LDItaoyNOAY6Uewc665JcIzCKsKc_M9flwmP.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Material Icons Sharp';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialiconssharp/v45/oPWQ_lt5nv4pWNJpghLP75WiFR4kLh3kvmvR.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Material Icons Two Tone';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialiconstwotone/v43/hESh6WRmNCxEqUmNyh3JDeGxjVVyMg4tHGctNCu0.woff2) format('woff2');
+  }
+  /* https://remixicon.com/ */
+  @font-face {
+    font-family: 'RemixOutlined';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://cdn.jsdelivr.net/npm/remixicon-ligatures@2.5.0/fonts/RemixOutlined.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'RemixFilled';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://cdn.jsdelivr.net/npm/remixicon-ligatures@2.5.0/fonts/RemixFilled.woff2) format('woff2');
+  }
+  /* http://kudakurage.com/ligature_symbols/ */
+  @font-face {
+    font-family: 'LigatureSymbols';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://rawcdn.githack.com/kudakurage/LigatureSymbols/d54f43cd72d190b7a3c0b2ee1644fac770b4a146/LigatureSymbols-2.11.woff) format('woff');
+  }

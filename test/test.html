@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>u-ico Test</title>
+        <link rel="stylesheet" href="../fonts.css">
+        <link rel="stylesheet" href="../u-ico.css">
+        <link rel="stylesheet" href="../utf8.css">
+        <script type=module src="../u-ico.js"></script>
+<body>
+
+<label>
+    Change Color <input name=x type=color oninput="document.documentElement.style.color=this.value">
+</label>
+
+<h2>Material Icons</h2>
+<div style="--u-ico-font:LigatureSymbols;">
+    <u-ico>twitter</u-ico>
+    <u-ico>youtube</u-ico>
+    <u-ico>copy</u-ico>
+</div>
+
+<h2>Material Icons</h2>
+<div style="--u-ico-font:'Material Icons'">
+    <select onchange="this.parentNode.style.setProperty('--u-ico-font',this.value)">
+        <option value="Material Icons">--u-ico-font:'Material Icons'</option>
+        <option value="Material Icons Outlined">--u-ico-font:'Material Icons Outlined'</option>
+        <option value="Material Icons Round">--u-ico-font:'Material Icons Round'</option>
+        <option value="Material Icons Sharp">--u-ico-font:'Material Icons Sharp'</option>
+        <option value="Material Icons Two Tone">--u-ico-font:'Material Icons Two Tone'</option>
+    </select><br>
+    <div style="display:flex; flex-wrap:wrap; gap:.2rem">
+        <script>
+            for (let icon of 'star,add,clear,call'.split(',')) {
+                document.write('<div><u-ico>'+icon+'</u-ico><div style="font-size:12px; text-align:center">'+icon+'</div></div>');
+            }
+        </script>
+    </div>
+</div>
+
+<h2>Remixicon</h2>
+<div style="--u-ico-font:'RemixOutlined'">
+    <div style="display:flex; flex-wrap:wrap; gap:.2rem">
+        <script>
+            for (let icon of 'star,heart,home,file,key,sun'.split(',')) {
+                document.write('<div><u-ico>'+icon+'</u-ico><div style="font-size:12px; text-align:center">'+icon+'</div></div>');
+            }
+        </script>
+    </div>
+</div>
+
+
+<h2>Vertical alignement</h2>
+Vertical-align initial (baseline): <u-ico style="width:auto">star</u-ico><br>
+Vertical-align baseline: <u-ico style="vertical-align:baseline; width:auto">star</u-ico><br>
+Vertical-align middle: <u-ico style="vertical-align:middle">star</u-ico><br>
+
+Vertical-align baseline and padding: <u-ico style="vertical-align:baseline; padding:1rem">star</u-ico><br>
+Vertical-align middle: <u-ico style="vertical-align:middle; padding:.5rem">star</u-ico><br>
+Vertical-align bottom: <u-ico style="vertical-align:bottom; padding:.5rem">star</u-ico><br>
+
+<h2>Not found</h2>
+<u-ico>copy</u-ico>
+
+<h2>UTF-8 (beta)</h2>
+<u-ico utf8=star> </u-ico>
+
+<h2>Styled</h2>
+<u-ico class=styled>star</u-ico>
+
+<style>
+html {
+    font-size:20px;
+}
+u-ico {
+    border:1px solid black;
+}
+.styled {
+    width:2rem;
+    height:2rem;
+    border:3px solid;
+    border-radius:.5em;
+    background:#777;
+    color:#5af;
+    transition:transform .9s, color .8s;
+}
+.styled:hover {
+    color:greenyellow;
+    transform:rotate(180deg);
+}
+</style>
