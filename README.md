@@ -17,7 +17,6 @@ As fonts only load if they are used, its not as huge as it sounds.
 At the moment there are this font-sets:  
 
 https://material.io/resources/icons/
-
 - font-family: 'Material Icons';
 - font-family: 'Material Icons Outlined';
 - font-family: 'Material Icons Round';
@@ -25,12 +24,10 @@ https://material.io/resources/icons/
 - font-family: 'Material Icons Two Tone';
 
 https://remixicon.com/  
-
 - font-family: 'RemixOutlined';
 - font-family: 'RemixFilled';
 
 http://kudakurage.com/ligature_symbols/  
-
 - font-family: 'LigatureSymbols';
 
 ## custom icon font
