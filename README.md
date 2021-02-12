@@ -4,15 +4,17 @@ Universal Icon using different icon fonts
 ## ussage
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/nuxodin/u-ico@1.0.0/fonts.css'">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/nuxodin/u-ico@1.0.0/u-ico.css'">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/nuxodin/u-ico@1.0.0/fonts.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/nuxodin/u-ico@1.0.0/u-ico.css">
 
 <u-ico style="--u-ico-font:'RemixOutlined'">twitter</u-ico>
 
 ```
 
 ## font sets
-At the moment there are this font-sets  
+fonts.css has the following predefined font-families.
+As fonts only load if they are used, its not as huge as it sounds.  
+At the moment there are this font-sets:  
 
 https://material.io/resources/icons/
 
