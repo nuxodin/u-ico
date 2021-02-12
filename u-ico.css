@@ -30,7 +30,7 @@ u-ico {
   align-items:center;
   overflow: hidden;
 }
-/* je */
+/* js */
 u-ico[failed] {
   overflow:visible;
   width:auto;
