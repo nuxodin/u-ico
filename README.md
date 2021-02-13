@@ -6,6 +6,7 @@ Universal Icon using different icon fonts
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/nuxodin/u-ico@1.0.0/fonts.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/nuxodin/u-ico@1.0.0/u-ico.css">
+
 <style>
 html {
     --u-ico-font:'RemixOutlined'
