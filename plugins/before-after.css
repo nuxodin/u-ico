@@ -1,0 +1,32 @@
+
+
+[u-ico-before]::before,
+[u-ico-after]::after {
+    /* fine */
+    font-family: var(--u-ico-font);
+    font-weight: normal;
+    font-style: normal;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased; /* Support for all WebKit browsers. */
+    text-rendering: optimizeLegibility; /* Support for Safari and Chrome. */
+    -moz-osx-font-smoothing: grayscale; /* Support for Firefox. */
+    font-feature-settings: 'liga'; /* Support for IE. */
+    /* ok? */
+    display: inline-block;
+    line-height: 1;
+    vertical-align: baseline; /* needed? */
+    position: relative;
+    bottom: -0.11em;
+}
+[u-ico-before]::before {
+    content:attr(u-ico-before);
+    margin-right:.2em;
+}
+[u-ico-after]::after {
+    content:attr(u-ico-after);
+    margin-left:.1em;
+}

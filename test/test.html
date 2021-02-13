@@ -6,7 +6,6 @@
         <title>u-ico Test</title>
         <link rel="stylesheet" href="../fonts.css">
         <link rel="stylesheet" href="../u-ico.css">
-        <link rel="stylesheet" href="../utf8.css">
         <script type=module src="../u-ico.js"></script>
 <body>
 
@@ -14,11 +13,16 @@
     Change Color <input name=x type=color oninput="document.documentElement.style.color=this.value">
 </label>
 
-<h2>Material Icons</h2>
-<div style="--u-ico-font:LigatureSymbols;">
-    <u-ico>twitter</u-ico>
-    <u-ico>youtube</u-ico>
-    <u-ico>copy</u-ico>
+
+<h2>LigatureSymbols</h2>
+<div style="--u-ico-font:'LigatureSymbols'">
+    <div style="display:flex; flex-wrap:wrap; gap:.2rem">
+        <script>
+            for (let icon of 'twitter,youtube,copy,not_found'.split(',')) {
+                document.write('<div style="text-align:center"><u-ico>'+icon+'</u-ico><div style="font-size:12px">'+icon+'</div></div>');
+            }
+        </script>
+    </div>
 </div>
 
 <h2>Material Icons</h2>
@@ -32,8 +36,8 @@
     </select><br>
     <div style="display:flex; flex-wrap:wrap; gap:.2rem">
         <script>
-            for (let icon of 'star,add,clear,call'.split(',')) {
-                document.write('<div><u-ico>'+icon+'</u-ico><div style="font-size:12px; text-align:center">'+icon+'</div></div>');
+            for (let icon of 'star,add,clear,call,snowboarding,not_found'.split(',')) {
+                document.write('<div style="text-align:center"><u-ico>'+icon+'</u-ico><div style="font-size:12px">'+icon+'</div></div>');
             }
         </script>
     </div>
@@ -43,8 +47,8 @@
 <div style="--u-ico-font:'RemixOutlined'">
     <div style="display:flex; flex-wrap:wrap; gap:.2rem">
         <script>
-            for (let icon of 'star,heart,home,file,key,sun'.split(',')) {
-                document.write('<div><u-ico>'+icon+'</u-ico><div style="font-size:12px; text-align:center">'+icon+'</div></div>');
+            for (let icon of 'star,heart,home,file,key,sun,not_found'.split(',')) {
+                document.write('<div style="text-align:center"><u-ico>'+icon+'</u-ico><div style="font-size:12px">'+icon+'</div></div>');
             }
         </script>
     </div>
@@ -52,33 +56,23 @@
 
 
 <h2>Vertical alignement</h2>
-Vertical-align initial (baseline): <u-ico style="width:auto">star</u-ico><br>
-Vertical-align baseline: <u-ico style="vertical-align:baseline; width:auto">star</u-ico><br>
+Vertical-align initial (baseline): <u-ico>star</u-ico><br>
+Vertical-align baseline: <u-ico style="vertical-align:baseline">star</u-ico><br>
 Vertical-align middle: <u-ico style="vertical-align:middle">star</u-ico><br>
 
-Vertical-align baseline and padding: <u-ico style="vertical-align:baseline; padding:1rem">star</u-ico><br>
-Vertical-align middle: <u-ico style="vertical-align:middle; padding:.5rem">star</u-ico><br>
-Vertical-align bottom: <u-ico style="vertical-align:bottom; padding:.5rem">star</u-ico><br>
+Vertical-align baseline and padding: <u-ico style="vertical-align:baseline; padding:.5rem">star</u-ico><br>
+Vertical-align middle and padding: <u-ico style="vertical-align:middle; padding:.5rem">star</u-ico><br>
+Vertical-align bottom and padding: <u-ico style="vertical-align:bottom; padding:.5rem">star</u-ico><br>
 
-<h2>Not found</h2>
-<u-ico>copy</u-ico>
-
-<h2>UTF-8 (beta)</h2>
-<u-ico utf8=star> </u-ico>
 
 <h2>Styled</h2>
 <u-ico class=styled>star</u-ico>
 
 <style>
-html {
-    font-size:20px;
-}
-u-ico {
-    border:1px solid black;
-}
+html { font-size:20px; }
+u-ico { border:1px solid #ccc; }
 .styled {
-    width:2rem;
-    height:2rem;
+    padding:2rem;
     border:3px solid;
     border-radius:.5em;
     background:#777;

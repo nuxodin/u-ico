@@ -1,0 +1,14 @@
+u-ico[font=utf8] {
+    --u-ico-font:sans-serif;
+}
+
+/* clear names */
+u-ico[font=utf8][icon=close]:after { content:'✕' }
+u-ico[font=utf8][icon=star]:after { content:'★' }
+u-ico[font=utf8][icon=heart]:after { content:'♥' }
+u-ico[font=utf8][icon=airplane]:after { content:'✈' }
+u-ico[font=utf8][icon=check]:after { content:'✔' }
+
+/* ok names? compare with material-icons and report if wrong*/
+u-ico[font=utf8][icon="arrow_right"]:after { content:'▶' }
+u-ico[font=utf8][icon="arrow_left"]:after { content:'◄' }

@@ -1,12 +1,9 @@
 html {
   --u-ico-font:"Material Icons";
-  --u-ico-size:1.5rem;
-  --u-ico-color:currentColor;
+  x--u-ico-size:1.5rem;
+  x--u-ico-color:currentColor;
 }
 u-ico {
-  font-family: var(--u-ico-font);
-  font-size: var(--u-ico-size);
-  xfont-size: 24px;  /* Preferred icon size, material-icons */
   font-weight: normal;
   font-style: normal;
   display: inline-block;
@@ -20,19 +17,41 @@ u-ico {
   text-rendering: optimizeLegibility; /* Support for Safari and Chrome. */
   -moz-osx-font-smoothing: grayscale; /* Support for Firefox. */
   font-feature-settings: 'liga'; /* Support for IE. */
+
+  /* ok? */
+  font-family: var(--u-ico-font) !important;
+  xfont-size: var(--u-ico-size);
+  xfont-size: 24px;  /* Preferred icon size, material-icons */
+  font-size: 1.5rem;
+  text-align:center;
+  overflow:hidden; /* prevents layout-shift on font load, bud baseline gets to the box insetad of the text */
 }
+
+u-ico[icon]::after {
+    content:attr(icon);
+}
+
+/* theming *
 u-ico {
-  width: var(--u-ico-size);
-  height: var(--u-ico-size);
   color: var(--u-ico-color);
-  display:inline-flex;
-  justify-content:center;
-  align-items:center;
-  overflow: hidden;
+  font-size:var(--u-ico-size):
+  xoverflow: hidden;
 }
-/* js */
+/* inline *
+u-ico[inline] {
+  overflow:visible;
+  position: relative;
+  bottom: -0.11em;
+  display:inline;
+}
+/* js | better generate in js? *
+html.u-ico-js u-ico { width:1em; }
+html.u-ico-ready u-ico { width: auto; }
+
 u-ico[failed] {
   overflow:visible;
   width:auto;
-  font-family:inherit;
+  --u-ico-font:initial;
+  xxxfont-family:inherit;
 }
+/* */
