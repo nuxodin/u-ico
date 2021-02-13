@@ -15,7 +15,7 @@ html {
 <u-ico>twitter</u-ico>
 
 Or:
-<u-ico font=remix>twitter</u-ico>
+<u-ico font=remix variant=outlined>twitter</u-ico>
 
 ```
 ## Theming / custom css properties
