@@ -1,4 +1,4 @@
-# &lg;u-ico&gt;
+# &lt;u-ico&gt;
 Universal Icon using different icon fonts
 
 ## Ussage
