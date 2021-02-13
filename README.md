@@ -42,7 +42,7 @@ https://remixicon.com/
 http://kudakurage.com/ligature_symbols/  
 - font-family: 'LigatureSymbols';
 
-## custom icon font
+## Custom icon font
 Just ad this to your CSS:
 
 ```css
@@ -57,7 +57,7 @@ html {
 }
 ```
 
-## optional javascript (beta)
+## Optional javascript (beta)
 If you add the javascript, the icon falls back to its text if it could not load.
 And adds a warning to the console.
 
