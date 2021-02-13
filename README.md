@@ -1,21 +1,28 @@
 # u-ico
 Universal Icon using different icon fonts
 
-## ussage
+## Ussage
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/nuxodin/u-ico@1.0.0/fonts.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/nuxodin/u-ico@1.0.0/u-ico.css">
+<style>
+html {
+    --u-ico-font:'RemixOutlined'
+}
+</style>
+<u-ico>twitter</u-ico>
 
-<u-ico style="--u-ico-font:'RemixOutlined'">twitter</u-ico>
+Or:
+<u-ico font=remix>twitter</u-ico>
 
 ```
-## theming / custom css properties
+## Theming / custom css properties
 `--u-ico-font:'LigatureSymbols'` Defines the font used for the icons  
 `--u-ico-color:red` The default is currentColor  
 `--u-ico-size:1.5rem` the font-size of the icon  
 
-## font sets
+## Font sets
 fonts.css has the following predefined font-families.
 As fonts only load if they are used, its not as huge as it sounds.  
 At the moment there are this font-sets:  
