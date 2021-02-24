@@ -2,13 +2,33 @@ u-ico[font=utf8] {
     --u-ico-font:sans-serif;
 }
 
+/* ok? */
+u-ico[font=utf8]:not([inline]) {
+    width:1em;
+}
+
 /* clear names */
 u-ico[font=utf8][icon=close]:after { content:'✕' }
 u-ico[font=utf8][icon=star]:after { content:'★' }
 u-ico[font=utf8][icon=heart]:after { content:'♥' }
 u-ico[font=utf8][icon=airplane]:after { content:'✈' }
 u-ico[font=utf8][icon=check]:after { content:'✔' }
+u-ico[font=utf8][icon=sun]:after { content:'☼' }
+u-ico[font=utf8][icon=pensil]:after { content:'✎' }
+u-ico[font=utf8][icon=previous]:after { content:'❮' }
+u-ico[font=utf8][icon=next]:after { content:'❯' }
+u-ico[font=utf8][icon=telefon]:after { content:'☎' }
+u-ico[font=utf8][icon=cloud]:after { content:'☁' }
+u-ico[font=utf8][icon=email]:after { content:'✉' }
+u-ico[font=utf8][icon=drag_indicator]:after { content:'⠿' }
+u-ico[font=utf8][icon=menu]:after { content:'≡' }
+u-ico[font=utf8][icon=list]:after { content:'≔' }
+u-ico[font=utf8][icon=music]:after { content:'🎜' }
+
+
+
+
 
 /* ok names? compare with material-icons and report if wrong*/
-u-ico[font=utf8][icon="arrow_right"]:after { content:'▶' }
-u-ico[font=utf8][icon="arrow_left"]:after { content:'◄' }
+u-ico[font=utf8][icon=arrow_right]:after { content:'▶' }
+u-ico[font=utf8][icon=arrow_left]:after { content:'◄' }

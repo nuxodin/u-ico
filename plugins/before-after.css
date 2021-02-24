@@ -15,12 +15,11 @@
     text-rendering: optimizeLegibility; /* Support for Safari and Chrome. */
     -moz-osx-font-smoothing: grayscale; /* Support for Firefox. */
     font-feature-settings: 'liga'; /* Support for IE. */
+
     /* ok? */
     display: inline-block;
     line-height: 1;
-    vertical-align: baseline; /* needed? */
-    position: relative;
-    bottom: -0.11em;
+    vertical-align: text-bottom; /* needed? */
 }
 [u-ico-before]::before {
     content:attr(u-ico-before);

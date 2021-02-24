@@ -1,12 +1,13 @@
+/*
+todos:
+:where(selectors) so they can be easely overwritten ?
+*/
 html {
   --u-ico-font:"Material Icons";
-  x--u-ico-size:1.5rem;
-  x--u-ico-color:currentColor;
 }
 u-ico {
   font-weight: normal;
   font-style: normal;
-  display: inline-block;
   line-height: 1;
   text-transform: none;
   letter-spacing: normal;
@@ -17,33 +18,33 @@ u-ico {
   text-rendering: optimizeLegibility; /* Support for Safari and Chrome. */
   -moz-osx-font-smoothing: grayscale; /* Support for Firefox. */
   font-feature-settings: 'liga'; /* Support for IE. */
+  font-family: var(--u-ico-font) !important;
 
   /* ok? */
-  font-family: var(--u-ico-font) !important;
-  xfont-size: var(--u-ico-size);
-  xfont-size: 24px;  /* Preferred icon size, material-icons */
-  font-size: 1.5rem;
+  display: inline-block; /* inline-flex has an other baseline? */
   text-align:center;
-  overflow:hidden; /* prevents layout-shift on font load, bud baseline gets to the box insetad of the text */
+  font-size: 1.5rem; /* 24px Preferred icon size, material-icons */
+  /* overflow:hidden
+    + prevents layout-shift on font load.
+    - But baseline gets to the box insetad of the text.
+    - Some Icons on some Fonts may get cuted?
+  */
+  overflow:hidden;
 }
 
-u-ico[icon]::after {
+[icon]::after { /* todo if supported: :where([icon]::after) { */
     content:attr(icon);
 }
 
-/* theming *
-u-ico {
-  color: var(--u-ico-color);
-  font-size:var(--u-ico-size):
-  xoverflow: hidden;
-}
-/* inline *
+/* BETA! */
+/* inline */
 u-ico[inline] {
   overflow:visible;
-  position: relative;
-  bottom: -0.11em;
-  display:inline;
+  font-size:1em; /* reset font to 1em instead of 1.5rem */
+  vertical-align: text-bottom;
+  xwidth:1em;
 }
+
 /* js | better generate in js? *
 html.u-ico-js u-ico { width:1em; }
 html.u-ico-ready u-ico { width: auto; }
@@ -54,4 +55,11 @@ u-ico[failed] {
   --u-ico-font:initial;
   xxxfont-family:inherit;
 }
-/* */
+
+/* USEFUL? */
+/* theming *
+u-ico {
+  color: var(--u-ico-color);
+  font-size:var(--u-ico-size):
+  xoverflow: hidden;
+}
