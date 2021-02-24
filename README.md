@@ -1,21 +1,29 @@
-# u-ico
+# &lt;u-ico&gt;
 Universal Icon using different icon fonts
 
-## ussage
+## Ussage
 
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/nuxodin/u-ico@1.0.0/fonts.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/nuxodin/u-ico@1.0.0/u-ico.css">
 
-<u-ico style="--u-ico-font:'RemixOutlined'">twitter</u-ico>
+<style>
+html {
+    --u-ico-font:'RemixOutlined'
+}
+</style>
+<u-ico>twitter</u-ico>
+
+Or:
+<u-ico font=remix variant=outlined>twitter</u-ico>
 
 ```
-## theming / custom css properties
+## Theming / custom css properties
 `--u-ico-font:'LigatureSymbols'` Defines the font used for the icons  
 `--u-ico-color:red` The default is currentColor  
 `--u-ico-size:1.5rem` the font-size of the icon  
 
-## font sets
+## Font sets
 fonts.css has the following predefined font-families.
 As fonts only load if they are used, its not as huge as it sounds.  
 At the moment there are this font-sets:  
@@ -34,7 +42,7 @@ https://remixicon.com/
 http://kudakurage.com/ligature_symbols/  
 - font-family: 'LigatureSymbols';
 
-## custom icon font
+## Custom icon font
 Just ad this to your CSS:
 
 ```css
@@ -49,7 +57,7 @@ html {
 }
 ```
 
-## optional javascript (beta)
+## Optional javascript (beta)
 If you add the javascript, the icon falls back to its text if it could not load.
 And adds a warning to the console.
 
