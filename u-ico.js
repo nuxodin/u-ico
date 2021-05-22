@@ -4,9 +4,28 @@ document.fonts.ready.then(()=>{
 });
 document.documentElement.classList.add('u-ico-js');
 
+
+// todo: icons from directory
+// [u-ico][font=teenyicons] {
+//     --directory:'https://cdn.jsdelivr.net/npm/teenyicons@0.4.1/outline/';
+// }
+// json directory-listing:
+// https://api.github.com/repos/:user/:repo/contents/:path
+// https://api.github.com/repos/teenyicons/teenyicons/contents/src/outline
+
+
+
 const uIco = class extends HTMLElement {
     constructor() {
         super();
+        /* todo: icons from directory
+        const dir = getComputedStyle(this).getPropertyValue('--u-ico-directory');
+        if (dir) {
+            const name = trim(this.innerHTML) || this.getAttribute('icon');
+            const path = dir+'/'+name+'.svg';
+            this.innerHTML '<svg><use href="'+path+'"></use></svg>';
+        }
+        */
     }
     connectedCallback() {
         let failed;
