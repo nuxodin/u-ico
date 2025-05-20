@@ -1,6 +1,6 @@
 /*
 todos:
-:where(selectors) so they can be easely overwritten ?
+:where(selectors) so they can be easily overwritten ?
 */
 html {
   --u-ico-font:"Material Icons";
@@ -53,13 +53,11 @@ u-ico[failed] {
   overflow:visible;
   width:auto;
   --u-ico-font:initial;
-  xxxfont-family:inherit;
 }
 
 /* USEFUL? */
-/* theming *
+/* theming */
 u-ico {
   color: var(--u-ico-color);
-  font-size:var(--u-ico-size):
-  xoverflow: hidden;
+  font-size:var(--u-ico-size);
 }
